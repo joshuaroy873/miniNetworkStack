@@ -5,7 +5,6 @@
 #include <iomanip> // Required for setfill, setw
 
 #define MAC_ADDRESS_SIZE 6
-#define ETHER_TYPE_SIZE 2
 
 struct EthernetFrame {
     uint8_t dst_mac[MAC_ADDRESS_SIZE];
