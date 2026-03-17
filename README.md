@@ -1,10 +1,12 @@
-`buildCpp.sh` can build all files in project folder
+`buildCpp.sh` can build all files in project folder:
 - One Cpp file is passed during function call, whose `main()` output is displayed
 - So, all `main()` in `src/*.cpp` needs to be commented out
 
+Completed:
 - [x] Phase 1: Byte parsing: `src/byte_parsing.cpp`
 - [x] Phase 2: Ethernet framing: `src/ethernet.cpp`
 
+TODOs:
 - [ ] Phase 3: Error handling + vectors
     - introduce safe bounds checking
     - use vectors instead of raw arrays
