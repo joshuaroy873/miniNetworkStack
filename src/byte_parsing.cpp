@@ -46,30 +46,30 @@ uint16_t read_u16(ByteReader* p_reader) {
 
 }
 
-int main() {
+// int main() {
 
-    uint8_t packet[] = {0x09, 0x08, 0x07, 0x06};
-    // ByteReader reader;
-    // reader.p_data = packet;
-    // reader.size = 4;
-    // reader.pos = 0;
-    ByteReader reader(packet, 4);
+//     uint8_t packet[] = {0x09, 0x08, 0x07, 0x06};
+//     // ByteReader reader;
+//     // reader.p_data = packet;
+//     // reader.size = 4;
+//     // reader.pos = 0;
+//     ByteReader reader(packet, 4);
 
-    try {
-        uint8_t byte1 = read_u8(&reader);
-        std::cout << "Byte 1: " << std::hex << (int)byte1 << std::endl;
+//     try {
+//         uint8_t byte1 = read_u8(&reader);
+//         std::cout << "Byte 1: " << std::hex << (int)byte1 << "; pos: " << bytes_remaining(&reader) << std::endl;
 
-        uint16_t byte23 = read_u16(&reader);
-        std::cout << "Byte 2+3: " << std::hex << (int)byte23 << std::endl;
+//         uint16_t byte23 = read_u16(&reader);
+//         std::cout << "Byte 2+3: " << std::hex << (int)byte23 << "; pos: " << bytes_remaining(&reader) << std::endl;
 
-        uint8_t byte4 = read_u8(&reader);
-        std::cout << "Byte 4: " << std::hex << int(byte4) << std::endl;
+//         uint8_t byte4 = read_u8(&reader);
+//         std::cout << "Byte 4: " << std::hex << int(byte4) << "; pos: " << bytes_remaining(&reader) << std::endl;
 
-        uint8_t extra = read_u8(&reader);
-    }
-    catch (const std::exception& e) {
-        std::cout << "CAUGHT ERROR: " << e.what() << std::endl;
-    }
+//         uint8_t extra = read_u8(&reader);
+//     }
+//     catch (const std::exception& e) {
+//         std::cout << "CAUGHT ERROR: " << e.what() << std::endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }

@@ -1,10 +1,9 @@
-- [x] Phase 1: Byte parsing
-    - `src/byte_parsing.cpp`
+`buildCpp.sh` can build all files in project folder
+- One Cpp file is passed during function call, whose `main()` output is displayed
+- So, all `main()` in `src/*.cpp` needs to be commented out
 
-- [ ] Phase 2: Structs + simple parsing
-    - define EthernetFrame as a struct
-    - write simple parsing function (no error handling yet)
-    - print results
+- [x] Phase 1: Byte parsing: `src/byte_parsing.cpp`
+- [x] Phase 2: Ethernet framing: `src/ethernet.cpp`
 
 - [ ] Phase 3: Error handling + vectors
     - introduce safe bounds checking
