@@ -4,7 +4,7 @@
 
 Completed:
 - [x] Phase 1: Byte parsing: `src/byte_parsing.cpp`
-- [x] Phase 2: Ethernet framing: `src/ethernet.cpp`
+- [x] Phase 2: Ethernet framing: `src/ethernet_frame.cpp`
 
 TODOs:
 - [ ] Phase 3: Error handling + vectors
